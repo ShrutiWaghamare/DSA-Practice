@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int maxProfit(vector<int>& prices) {
+    int minPrice = prices[0];   // best buying price so far
+    int maxProfit = 0;
+
+    for (int i = 1; i < prices.size(); i++) {
+        minPrice = min(minPrice, prices[i]);              // update buy price
+        maxProfit = max(maxProfit, prices[i] - minPrice); // update profit
+    }
+    return maxProfit;
+}
+
+int main() {
+    vector<int> prices = {7, 1, 5, 3, 6, 4};
+
+    cout << "Maximum Profit: " << maxProfit(prices) << endl;
+
+    return 0;
+}
