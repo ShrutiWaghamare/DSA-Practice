@@ -20,5 +20,5 @@ class Solution:
 # ----------------- Example Usage -----------------
 if __name__ == "__main__":
     nums = [4, 3, 2, 7, 8, 2, 3, 1]
-    sol = Solution()
-    print(sol.findDuplicates(nums))   # Output: [3, 2]
+    solu = Solution()
+    print(solu.findDuplicates(nums))   # Output: [3, 2]
