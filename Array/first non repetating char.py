@@ -1,5 +1,5 @@
 from collections import Counter
-s = input()
+s = input("Enter String: ")
 count = Counter(s)
 for ch in s:
     if count[ch] == 1:
